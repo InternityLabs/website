@@ -1,10 +1,13 @@
-[
-  {
-    "id": 1,
-    "message": "Test message for ultimate version"
-  },
-  {
-    "id": 2,
-    "message": "Second test message for ultimate version"
-  }
-]
+{
+  "notifications":
+  [
+    {
+      "id": 1,
+      "message": "Test message for ultimate version"
+    },
+    {
+      "id": 2,
+      "message": "Second test message for ultimate version"
+    }
+  ]
+}
