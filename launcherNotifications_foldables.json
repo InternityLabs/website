@@ -4,13 +4,8 @@
   [
     {
       "id": 1,
-      "title": "Message 1",
-      "message": "Test message for Foldable devices"
-    },
-    {
-      "id": 2,
-      "title": "Message 2",
-      "message": "Second test message for Foldable devices"
+      "title": "Important",
+      "message": "Win-X Launcher now supports sending notifications. This will be used to notify important changes going forward. Please read it before deleting."
     }
   ]
 }
