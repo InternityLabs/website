@@ -3,7 +3,7 @@
   "notifications":
   [
     {
-      "id": 1,
+      "id": 0,
       "title": "Important",
       "message": "Win-X Launcher for foldables now supports sending notifications. This will be used to notify important changes going forward. Please read it before deleting."
     }
