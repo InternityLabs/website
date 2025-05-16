@@ -1,6 +1,6 @@
 {
   "lastId": 0,
-  "sendSuccessEmail": true,
+  "sendSuccessEmail": false,
   "notifications":
   [
     {
