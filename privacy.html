@@ -67,9 +67,11 @@
             <div class="cta-inner rounded">
               <h2 class="section-heading mb-4">Privacy POLICY of 'Win-X Launcher'
               </h2>
-              <p>The Android App 'Win-X Launcher' does not collect any personal data.
-                It only collects some system logs in some rare unforeseen error scenarios, which may not even happen
-                during the lifecycle of the app usage for most of the users.</p>
+              <p>
+                The Android app 'Win-X Launcher' does not collect any personal data.
+                The only time we collect data is if the app encounters an exception (a crash or serious error), where
+                we collect a limited crash report so we can diagnose and fix the problem.
+              </p>
               <hr>
               <p>This document can be printed for reference by using the print command in the settings of any browser.
               </p>
@@ -77,9 +79,31 @@
               <h2 class="section-heading mb-4">
                 <span class="section-heading-upper text-center">POLICY Summary</span>
               </h2>
-              <p>This Android app does not collect any personal data.<br>
-                It only collects some system logs in some rare unforeseen error scenarios, which may not even happen
-                during the lifecycle of the app usage for most of the users.</p>
+              <h5><b>Data collection</b></h5>
+              <p>
+                We only collect a crash report in case of an exception. The crash report contains:
+              </p>
+              <p>
+                • Code stack trace (exception stack trace) and related error details<br>
+                • Android version<br>
+                • Device language<br>
+                • App version<br>
+                • App instance ID ("DeviceId") — a randomly generated identifier created by the app so that multiple
+                crash reports can be correlated as coming from the same app installation
+              </p>
+
+              <h5><b>Data storage</b></h5>
+              <p>
+                Crash reports are received in our support inbox and may be retained only as long as needed to
+                troubleshoot and fix the issue. Other than crash reports sent during exceptions, we do not collect,
+                store, or maintain any user data.
+              </p>
+
+              <h5><b>Data usage</b></h5>
+              <p>
+                We use crash reports solely to diagnose, troubleshoot, and improve app stability. We do not use this
+                information for advertising, analytics, profiling, or marketing.
+              </p>
 
               <p><b>Contact information: </b><br>Internity Labs, <br>2222 152nd Ave NE, Suite 201,<br>Redmond WA 98052
               </p>
@@ -100,46 +124,72 @@
                 approach: 'Not collecting it at all'.
                 If you have any questions or concerns about our Android app, please contact us using above mentioned
                 contact information.
-                In this privacy notice, we seek to explain to you in the clearest way possible what system information
-                we collect in case of some serious app error,
-                and how we use it. If there are any terms in this privacy notice that you do not agree with, please
+                In this privacy notice, we seek to explain to you in the clearest way possible what limited crash
+                information we collect if the app encounters an exception, how it is stored, and how it is used.
+                If there are any terms in this privacy notice that you do not agree with, please
                 discontinue use of our App.
               </p>
-              <h5><b>Types of System Data collected</b></h5>
-              <p>If case of certain types of error during the operation of the app, the following data is collected by
-                the app and sent over to Internity Labs.</p>
+              <h5><b>Types of data collected</b></h5>
+              <p>In case of an exception during the operation of the app, the following limited crash report data may be
+                collected and sent to Internity Labs.</p>
               <p>
-                • Version of Android on your device.<br>
-                • Device Language<br>
+                • Code stack trace (exception stack trace) and related error details<br>
+                • Version of Android on your device<br>
+                • Device language<br>
                 • Version of the Win-X Launcher app on your device<br>
-                • Exception trace of the error from our code running on your device.<br>
+                • App instance ID ("DeviceId") — a randomly generated identifier associated with this app installation
               </p>
 
-              <h5><b>Method of system data collection</b></h5>
-              <p>The app programmatically sends an email to a gmail account associated with the InternityLabs.</p>
+              <h5><b>Example crash report (redacted)</b></h5>
+              <p>
+                The following is an illustrative example of what a crash report may look like. Identifiers and
+                sensitive details (such as any device identifier, file names, or full paths) are not included.
+              </p>
+              <div class="border rounded p-3 my-3 bg-light text-dark" style="white-space: pre-wrap;">
+                <pre class="small m-0">AndroidVersion: 22
+DeviceLanguage: en-PH
+AppVersion: 30.3
+DeviceId: 12345678  (randomly generated app instance ID)
+Error: System.UnauthorizedAccessException: Access denied
+  at &lt;YourAppNamespace&gt;.&lt;SomeMethod&gt;(...)
+  at &lt;YourAppNamespace&gt;.&lt;AnotherMethod&gt;(...)
+</pre>
+              </div>
 
-              <h5><b>Mode and place of reviewing the system data</b></h5>
-              <p><b>Methods of reviewing</b></p>
-              <p>The system data is occasionally screened by persons in charge (humans), as needed to identify and
-                trouble shoot any app related problems. It is possible that
-                some data may never be looked at by the operation engineer.
-                Data is also be screened when some user reaches out to the Internity Labs for any problem based by their
-                app installation.</p>
-              <p>The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification,
-                or unauthorized destruction of the system data.</p>
-              <p><b>Place</b></p>
-              <p>The system data is occasionally reviewed at the Owner's operating office. Depending on the User's
-                location, data transfers may involve transferring the User's Data to a country other than their own.</p>
-              <p><b>Retention time</b></p>
-              <p>The system data shall be reviewed and stored for as long as required by the purpose they have been
-                collected for.</p>
+              <h5><b>Method of data collection</b></h5>
+              <p>The app programmatically sends the crash report via email to an account associated with Internity Labs.
+              </p>
+
+              <h5><b>How we use the data</b></h5>
+              <p>
+                Crash reports are used only to identify, troubleshoot, and fix app issues. We do not sell crash report
+                data and we do not use it for advertising, analytics, profiling, or marketing.
+              </p>
+
+              <h5><b>Where the data is stored</b></h5>
+              <p>
+                Crash reports are stored in our support mailbox. We do not maintain a separate database of user data.
+              </p>
+
+              <h5><b>How long we keep the data</b></h5>
+              <p>
+                Crash reports may be retained only as long as needed to troubleshoot and fix the issue, and may be
+                deleted afterward.
+              </p>
+
+              <h5><b>Who can access the data</b></h5>
+              <p>
+                Crash reports may be reviewed by Internity Labs personnel as needed to diagnose and resolve the problem.
+                We take appropriate security measures to prevent unauthorized access, disclosure, modification, or
+                unauthorized destruction of the crash report data.
+              </p>
 
               <h5><b>App permissions granted to it by the user</b></h5>
               <p>
                 App requests permission to certain features from your mobile device, including your mobile device's
                 bluetooth, microphone, storage, notifications, location, and other features,
-                but we don't collect and receive this information. It is only used by the app on your device, and it
-                never leaves the boundary of your device.
+                but we do not collect or receive this information. It is only used by the app on your device, and it
+                does not leave your device unless a crash report is sent during an exception as described above.
               </p>
 
               <h5><b>Changes to this privacy policy</b></h5>
@@ -151,7 +201,7 @@
               </p>
 
               <hr>
-              <p>Latest update: January 02, 2024</p>
+              <p>Latest update: February 06, 2026</p>
             </div>
           </div>
         </div>
