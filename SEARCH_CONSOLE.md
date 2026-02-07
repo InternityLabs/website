@@ -22,6 +22,8 @@ Alternative (easier if DNS access is painful): **URL prefix property**
 2. Left menu → **Sitemaps**.
 3. Submit: `sitemap.xml`
 
+Note: the **Sitemaps** screen expects an XML sitemap. If you submit `robots.txt` (or a typo like `robots.tx`), Search Console will show an error like “Your Sitemap does not appear to be in a supported format” because that URL is not an XML sitemap.
+
 Your site already ships these files:
 - `https://www.internitylabs.com/sitemap.xml`
 - `https://www.internitylabs.com/robots.txt`
