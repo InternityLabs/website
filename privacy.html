@@ -77,40 +77,6 @@
               </p>
 
               <h2 class="section-heading mb-4">
-                <span class="section-heading-upper text-center">POLICY Summary</span>
-              </h2>
-              <h5><b>Data collection</b></h5>
-              <p>
-                We only collect a crash report in case of an exception. The crash report contains:
-              </p>
-              <p>
-                • Code stack trace (exception stack trace) and related error details<br>
-                • Android version<br>
-                • Device language<br>
-                • App version<br>
-                • App instance ID ("DeviceId") — a randomly generated identifier created by the app so that multiple
-                crash reports can be correlated as coming from the same app installation
-              </p>
-
-              <h5><b>Data storage</b></h5>
-              <p>
-                Crash reports are received in our support inbox and may be retained only as long as needed to
-                troubleshoot and fix the issue. Other than crash reports sent during exceptions, we do not collect,
-                store, or maintain any user data.
-              </p>
-
-              <h5><b>Data usage</b></h5>
-              <p>
-                We use crash reports solely to diagnose, troubleshoot, and improve app stability. We do not use this
-                information for advertising, analytics, profiling, or marketing.
-              </p>
-
-              <p><b>Contact information: </b><br>Internity Labs, <br>2222 152nd Ave NE, Suite 201,<br>Redmond WA 98052
-              </p>
-              <p><b>Owner contact email: </b><a href="mailto:InternityLabs@outlook.com">InternityLabs@outlook.com</a>
-              </p>
-
-              <h2 class="section-heading mb-4">
                 <span class="section-heading-upper text-center">Full POLICY</span>
               </h2>
               <p><b>Contact information: </b><br>Internity Labs, <br>2222 152nd Ave NE, Suite 201,<br>Redmond WA 98052
@@ -129,7 +95,94 @@
                 If there are any terms in this privacy notice that you do not agree with, please
                 discontinue use of our App.
               </p>
-              <h5><b>Types of data collected</b></h5>
+
+              <h5><b>Google user data</b></h5>
+              <p>
+                Currently, Win-X Launcher does not request access to any Google Account data and does not use Google
+                Sign-In or any Google APIs that require accessing Google user data.
+                We are in the process of adding optional Google Drive support, and it will follow the same pattern as
+                OneDrive and pCloud (OAuth 2.0 tokens stored only on your device, and no cloud file data sent to
+                Internity Labs). See the "Cloud Connections" section below for details.
+              </p>
+
+              <hr class="my-4">
+              <h2 class="section-heading mb-4 text-center">
+                <span class="section-heading-upper d-block">Cloud Connections</span>
+              </h2>
+
+              <h5><b>Third-party cloud accounts (pCloud, OneDrive, Google Drive - planned)</b></h5>
+              <p>
+                Win-X Launcher optionally allows you to connect to your pCloud and/or Microsoft OneDrive accounts.
+                Google Drive support is in progress and, when available, will be optional.
+                These connections are used to show your cloud files and folders in the app UI as a file browser.
+              </p>
+
+              <h5><b>Data Accessed (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <p>
+                If you choose to connect an account, the app accesses only the cloud file/folder listing information
+                needed to display the file browser UI and to perform actions you explicitly request.
+                The app does not send your cloud files, folder names, or file contents to Internity Labs servers.
+              </p>
+
+              <h5><b>Data Usage (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <p>
+                We use OAuth 2.0 to obtain authorization to access your account. OAuth tokens and related authorization
+                information are stored only on your device using the platform's secure storage. This information is
+                used only to keep you signed in and to access your pCloud/OneDrive content within the app.
+              </p>
+              <p>
+                Cloud file/folder information is used only to render the file browser UI. It is not persisted by the
+                app once the file browser is closed.
+              </p>
+
+              <h5><b>Data Sharing (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <p>
+                We do not share your pCloud/OneDrive data with third parties. When you connect these accounts, the app
+                communicates directly with the relevant provider services (pCloud, Microsoft OneDrive, and Google Drive
+                when supported) to authenticate and to retrieve the information needed for the file browser.
+              </p>
+
+              <h5><b>Data Storage &amp; Protection (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <p>
+                OAuth tokens and related authorization data are stored only on your device in secure storage. Internity
+                Labs does not receive or store your OAuth tokens.
+              </p>
+
+              <h5><b>Data Retention &amp; Deletion (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <p>
+                You can disconnect your pCloud/OneDrive account(s) within the app to remove the stored OAuth tokens
+                from your device. You can also remove all locally stored app data by clearing the app's storage from
+                Android settings or uninstalling the app.
+              </p>
+
+              <hr class="my-4">
+              <h2 class="section-heading mb-4 text-center">
+                <span class="section-heading-upper d-block">Crash Reports</span>
+              </h2>
+
+              <h5><b>Data Sharing (Crash report)</b></h5>
+              <p>
+                Crash report emails may be delivered and stored by email service providers (for example, Gmail) solely
+                for the purpose of delivering and storing the crash report message in our support inbox.
+              </p>
+
+              <h5><b>Data Storage &amp; Protection (Crash report)</b></h5>
+              <p>
+                We store crash report emails in our support mailbox and restrict access to authorized Internity Labs
+                personnel. We use reasonable security measures to help protect this information from unauthorized
+                access, disclosure, modification, or destruction.
+              </p>
+
+              <h5><b>Data Retention &amp; Deletion (Crash report)</b></h5>
+              <p>
+                Crash reports may be retained only as long as needed to troubleshoot and fix the issue, and may be
+                deleted afterward. You can request deletion of crash report data by emailing
+                <a href="mailto:InternityLabs@outlook.com">InternityLabs@outlook.com</a>.
+                If available, please include your app instance ID ("DeviceId") and the approximate date/time of the
+                crash report so we can locate and delete the relevant message(s).
+              </p>
+
+              <h5><b>Types of data collected (Crash report)</b></h5>
               <p>In case of an exception during the operation of the app, the following limited crash report data may be
                 collected and sent to Internity Labs.</p>
               <p>
@@ -140,12 +193,13 @@
                 • App instance ID ("DeviceId") — a randomly generated identifier associated with this app installation
               </p>
 
-              <h5><b>Example crash report (redacted)</b></h5>
+              <h5><b>Example crash report (redacted) (Crash report)</b></h5>
               <p>
                 The following is an illustrative example of what a crash report may look like. Identifiers and
-                sensitive details (such as any device identifier, file names, or full paths) are not included.
+                sensitive details (such as account identifiers, advertising IDs, file names, or full paths) are not
+                included. The "DeviceId" shown below is a randomly generated app instance ID.
               </p>
-              <div class="border rounded p-3 my-3 bg-light text-dark" style="white-space: pre-wrap;">
+              <div class="border rounded p-1 my-1 bg-light text-dark" style="white-space: pre-wrap;">
                 <pre class="small m-0">AndroidVersion: 22
 DeviceLanguage: en-PH
 AppVersion: 30.3
@@ -156,28 +210,28 @@ Error: System.UnauthorizedAccessException: Access denied
 </pre>
               </div>
 
-              <h5><b>Method of data collection</b></h5>
+              <h5><b>Method of data collection (Crash report)</b></h5>
               <p>The app programmatically sends the crash report via email to an account associated with Internity Labs.
               </p>
 
-              <h5><b>How we use the data</b></h5>
+              <h5><b>How we use the data (Crash report)</b></h5>
               <p>
                 Crash reports are used only to identify, troubleshoot, and fix app issues. We do not sell crash report
                 data and we do not use it for advertising, analytics, profiling, or marketing.
               </p>
 
-              <h5><b>Where the data is stored</b></h5>
+              <h5><b>Where the data is stored (Crash report)</b></h5>
               <p>
                 Crash reports are stored in our support mailbox. We do not maintain a separate database of user data.
               </p>
 
-              <h5><b>How long we keep the data</b></h5>
+              <h5><b>How long we keep the data (Crash report)</b></h5>
               <p>
                 Crash reports may be retained only as long as needed to troubleshoot and fix the issue, and may be
                 deleted afterward.
               </p>
 
-              <h5><b>Who can access the data</b></h5>
+              <h5><b>Who can access the data (Crash report)</b></h5>
               <p>
                 Crash reports may be reviewed by Internity Labs personnel as needed to diagnose and resolve the problem.
                 We take appropriate security measures to prevent unauthorized access, disclosure, modification, or
