@@ -139,11 +139,14 @@
 
               <h5><b>Google user data</b></h5>
               <p>
-                Currently, Win-X Launcher does not request access to any Google Account data and does not use Google
-                Sign-In or any Google APIs that require accessing Google user data.
-                We are in the process of adding optional Google Drive support, and it will follow the same pattern as
-                OneDrive and pCloud (OAuth 2.0 tokens stored only on your device, and no cloud file data sent to
-                Internity Labs). See the "Cloud Connections" section below for details.
+                Win-X Launcher does not currently publish Google Drive connectivity. Google Drive support is planned
+                as an optional feature so users can browse and manage their own Google Drive files from the app's
+                unified file explorer interface.
+                When this feature is published, we will request Google OAuth access only for user-initiated file
+                explorer features, including the Google Docs scope ending with <code>/auth/docs</code> when needed for
+                document interaction.
+                This planned access will not be used for advertising, analytics, profiling, background indexing, or
+                unauthorized data collection.
               </p>
 
               <hr class="my-4">
@@ -154,14 +157,16 @@
               <h5><b>Third-party cloud accounts (pCloud, OneDrive, Google Drive - planned)</b></h5>
               <p>
                 Win-X Launcher optionally allows you to connect to your pCloud and/or Microsoft OneDrive accounts.
-                Google Drive support is in progress and, when available, will be optional.
+                Google Drive support is planned and will be optional when published.
                 These connections are used to show your cloud files and folders in the app UI as a file browser.
               </p>
 
               <h5><b>Data Accessed (pCloud / OneDrive / Google Drive - planned)</b></h5>
               <p>
                 If you choose to connect an account, the app accesses only the cloud file/folder listing information
-                needed to display the file browser UI and to perform actions you explicitly request.
+                needed to display the file browser UI and to perform actions you explicitly request, such as folder
+                navigation, opening or editing Google Docs documents, file rename/move/delete, uploading files from
+                your device, and downloading file metadata or content for local use.
                 The app does not send your cloud files, folder names, or file contents to Internity Labs servers.
               </p>
 
@@ -169,18 +174,20 @@
               <p>
                 We use OAuth 2.0 to obtain authorization to access your account. OAuth tokens and related authorization
                 information are stored only on your device using the platform's secure storage. This information is
-                used only to keep you signed in and to access your pCloud/OneDrive content within the app.
+                used only to keep you signed in and to access your connected cloud content within the app.
               </p>
               <p>
-                Cloud file/folder information is used only to render the file browser UI. It is not persisted by the
-                app once the file browser is closed.
+                Every cloud API call (including create, modify, move, rename, and delete operations) is performed only
+                after an explicit user action in the app. The app does not perform background indexing of your cloud
+                account.
               </p>
 
               <h5><b>Data Sharing (pCloud / OneDrive / Google Drive - planned)</b></h5>
               <p>
-                We do not share your pCloud/OneDrive data with third parties. When you connect these accounts, the app
-                communicates directly with the relevant provider services (pCloud, Microsoft OneDrive, and Google Drive
-                when supported) to authenticate and to retrieve the information needed for the file browser.
+                We do not share your pCloud/OneDrive/Google Drive data with third parties. When you connect these
+                accounts, the app
+                communicates directly with the relevant provider services (pCloud, Microsoft OneDrive, and Google Drive)
+                to authenticate and to retrieve the information needed for the file browser.
               </p>
 
               <h5><b>Data Storage &amp; Protection (pCloud / OneDrive / Google Drive - planned)</b></h5>
@@ -191,7 +198,8 @@
 
               <h5><b>Data Retention &amp; Deletion (pCloud / OneDrive / Google Drive - planned)</b></h5>
               <p>
-                You can disconnect your pCloud/OneDrive account(s) within the app to remove the stored OAuth tokens
+                You can disconnect your pCloud/OneDrive/Google Drive account(s) within the app to remove the stored
+                OAuth tokens
                 from your device. You can also remove all locally stored app data by clearing the app's storage from
                 Android settings or uninstalling the app.
               </p>
@@ -296,7 +304,7 @@ Error: System.UnauthorizedAccessException: Access denied
               </p>
 
               <hr>
-              <p>Latest update: February 06, 2026</p>
+              <p>Latest update: February 20, 2026</p>
             </div>
           </div>
         </div>
