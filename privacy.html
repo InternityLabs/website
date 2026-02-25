@@ -137,6 +137,7 @@
                 discontinue use of our App.
               </p>
 
+
               <h5><b>Google user data</b></h5>
               <p>
                 Win-X Launcher does not currently publish Google Drive connectivity. Google Drive support is planned
@@ -149,19 +150,40 @@
                 unauthorized data collection.
               </p>
 
+              <h5><b>Dropbox user data</b></h5>
+              <p>
+                Win-X Launcher plans to support Dropbox connectivity as an optional feature, allowing users to browse
+                and manage their own Dropbox files from the app's unified file explorer interface.
+                When this feature is published, we will request Dropbox OAuth access only for user-initiated file
+                explorer features. The following Dropbox permissions (scopes) are required:
+              </p>
+              <ul>
+                <li><b>files.metadata.read</b>: Needed to display the names and size of the files.</li>
+                <li><b>files.content.read</b>: Needed to load the thumbnails.</li>
+                <li><b>account_info.read</b>: Needed to display the name of the logged-in user.</li>
+                <li><b>files.content.write</b>: Needed to create folders or files when the user clicks "create new" and
+                  for file copying or moving between folders.</li>
+                <li><b>sharing.write</b>: Used for creating sharable links (which are used for viewing the file when the
+                  user clicks on it).</li>
+              </ul>
+              <p>
+                This planned access will not be used for advertising, analytics, profiling, background indexing, or
+                unauthorized data collection.
+              </p>
+
               <hr class="my-4">
               <h2 class="section-heading mb-4 text-center">
                 <span class="section-heading-upper d-block">Cloud Connections</span>
               </h2>
 
-              <h5><b>Third-party cloud accounts (pCloud, OneDrive, Google Drive - planned)</b></h5>
+              <h5><b>Third-party cloud accounts (pCloud, OneDrive, Dropbox - planned, Google Drive - planned)</b></h5>
               <p>
                 Win-X Launcher optionally allows you to connect to your pCloud and/or Microsoft OneDrive accounts.
-                Google Drive support is planned and will be optional when published.
+                Dropbox and Google Drive support are planned and will be optional when published.
                 These connections are used to show your cloud files and folders in the app UI as a file browser.
               </p>
 
-              <h5><b>Data Accessed (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <h5><b>Data Accessed (pCloud / OneDrive / Dropbox - planned / Google Drive - planned)</b></h5>
               <p>
                 If you choose to connect an account, the app accesses only the cloud file/folder listing information
                 needed to display the file browser UI and to perform actions you explicitly request, such as folder
@@ -170,7 +192,7 @@
                 The app does not send your cloud files, folder names, or file contents to Internity Labs servers.
               </p>
 
-              <h5><b>Data Usage (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <h5><b>Data Usage (pCloud / OneDrive / Dropbox - planned / Google Drive - planned)</b></h5>
               <p>
                 We use OAuth 2.0 to obtain authorization to access your account. OAuth tokens and related authorization
                 information are stored only on your device using the platform's secure storage. This information is
@@ -182,23 +204,28 @@
                 account.
               </p>
 
-              <h5><b>Data Sharing (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <h5><b>Data Sharing (pCloud / OneDrive / Dropbox - planned / Google Drive - planned)</b></h5>
               <p>
-                We do not share your pCloud/OneDrive/Google Drive data with third parties. When you connect these
+                We do not share your pCloud/OneDrive/Dropbox/Google Drive data with third parties. When you connect
+                these
                 accounts, the app
-                communicates directly with the relevant provider services (pCloud, Microsoft OneDrive, and Google Drive)
+                communicates directly with the relevant provider services (pCloud, Microsoft OneDrive, Dropbox, and
+                Google Drive)
                 to authenticate and to retrieve the information needed for the file browser.
               </p>
 
-              <h5><b>Data Storage &amp; Protection (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <h5><b>Data Storage &amp; Protection (pCloud / OneDrive / Dropbox - planned / Google Drive - planned)</b>
+              </h5>
               <p>
                 OAuth tokens and related authorization data are stored only on your device in secure storage. Internity
                 Labs does not receive or store your OAuth tokens.
               </p>
 
-              <h5><b>Data Retention &amp; Deletion (pCloud / OneDrive / Google Drive - planned)</b></h5>
+              <h5><b>Data Retention &amp; Deletion (pCloud / OneDrive / Dropbox - planned / Google Drive - planned)</b>
+              </h5>
               <p>
-                You can disconnect your pCloud/OneDrive/Google Drive account(s) within the app to remove the stored
+                You can disconnect your pCloud/OneDrive/Dropbox/Google Drive account(s) within the app to remove the
+                stored
                 OAuth tokens
                 from your device. You can also remove all locally stored app data by clearing the app's storage from
                 Android settings or uninstalling the app.
